@@ -9,6 +9,7 @@ html {
 }
 body {
     background: #1d2026;
+    background: #091921;
     /* background: #181a1f; */
     font-family: 'Almarai', sans-serif;
 }
@@ -119,7 +120,7 @@ header button:hover {
 }
 .intro {
     width: 100%;
-    height: 350px;
+    height: 360px;
     background-image: url("../Images/Icons/Background-image.jpeg");
     background-position: center;
     background-repeat: no-repeat;
@@ -166,7 +167,7 @@ header button:hover {
     margin-top: 10rem;
 }
 .administrations {
-    width: 100%;
+    width: calc(100% / 3);
     height: 450px;
     background: #fff;
     text-align: center;
@@ -273,7 +274,7 @@ header button:hover {
     flex-wrap: nowrap;
 }
 .teacher {
-    width: 25%;
+    width: calc(100% / 4);
     background: #fff;
     text-align: center;
     margin: 10px;
@@ -335,6 +336,193 @@ header button:hover {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+.programming-lang-img {
+    padding-bottom: 20px;
+}
 .programming-lang-title {
     padding-bottom: 10px;
+}
+.Learn-programming {
+    width: 100%;
+    padding-bottom: 150px;
+}
+.Learn-programming-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Learn-programming-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    padding: 100px;
+}
+.Learn-p {
+    width: calc(100% / 4);
+    margin: 0 15px;
+}
+.Learn-p .btn {
+    font-family: 'Almarai', sans-serif;
+    margin: 0 5px;
+}
+.student-list {
+    width: 100%;
+    padding-bottom: 50px;
+}
+.students-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+}
+.student-img img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.student-flag {
+    width: 100%;
+}
+.student-flag img {
+    width: 50%;
+}
+.students-content {
+    width: 100%;
+    height: 300px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.students-content .btn{
+    font-family: 'Almarai', sans-serif;
+    margin-top: 60px;
+}
+footer {
+    width: 100%;
+    color: white;
+    background-color: #091921;
+    background: #181a1f;
+    direction: ltr;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.footer {
+    width: calc(100% / 3);
+    margin: 0 20px;
+}
+.footer:nth-child(even) {
+    text-align: center;
+}
+.footer:last-child {
+    text-align: end;
+}
+.footer img {
+    width: 40%;
+    background: chocolate;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.footer h3 {
+    padding-bottom: 30px;
+}
+.footer p {
+    line-height: 2;
+}
+.footer p a:hover {
+    color: orange;
+}
+.footer .social {
+    padding-top: 20px;
+}
+.footer .social i {
+    background: #ededed;
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.copyright {
+    width: 100%;
+    padding: 10px;
+    background: #1d2026;
+    text-align: center;
+    text-transform: capitalize;
+}
+.students {
+    width: 100%;
+    min-height: 100vh;
+}
+.student-content {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 30px;
+   padding: 50px 0 50px 0;
+}
+.student {
+    text-align: center;
+    border: 2px dotted white;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.student-img {
+    padding-bottom: 20px;
+}
+.student-name {
+    text-align: center;
+}
+.student-name h3 {
+    font-family: 'Almarai', sans-serif;
+    color: black;
+    word-spacing: 2px;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+.programming-languages {
+    width: 100%;
+    min-height: 100vh;
+}
+.programming-languages-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+}
+.programming-languages p {
+    color: whitesmoke;
+    line-height: 2;
+    word-spacing: 3px;
+}
+.languages h3 {
+    font-size: 2rem;
+    text-align: start;
+    color: orange;
+    padding: 50px;
+}
+.programming-languages-content {
+    padding: 30px 0 50px 0;
+}
+.languages p {
+    color: whitesmoke;
+    line-height: 2;
+    word-spacing: 3px;
 }
