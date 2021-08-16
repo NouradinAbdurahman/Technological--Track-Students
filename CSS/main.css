@@ -10,7 +10,6 @@ html {
 body {
     background: #1d2026;
     background: #091921;
-    /* background: #181a1f; */
     font-family: 'Almarai', sans-serif;
 }
 ::-webkit-scrollbar {
@@ -44,6 +43,7 @@ a {
 }
 header {
     width: 100%;
+    height: auto;
     position: sticky;
     top: 0;
     left: 0;
@@ -70,11 +70,60 @@ header .logo img {
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
 }
+header .container .menu-img {
+    display: none;
+    width: 50%;
+    height: 50px;
+    /* padding: 10px; */
+    margin-top: 20px;
+    /* background: white; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    text-align: end;
+}
+header .container .menu-img img {
+    width: 15%;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+header .container .close-img {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 65px;
+    margin-top: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+header .container .close-img img {
+    width: 15%;
+    padding: 10px;
+    position: absolute;
+    content: " ";
+    left: 6%;
+    background: white;
+    border-radius: 10px;
+}
 header nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-
+}
+nav.active {
+    display: block;
 }
 header nav li{
     display: inline-block;
@@ -140,14 +189,12 @@ header button:hover {
     color: orange;
 }
 .hero p {
-    /* padding: 0 10px 0 10px ; */
     line-height: 2.6;
     word-spacing: 3px;
 }
 .administration {
     width: 100%;
     min-height: 100vh;
-    /* background: #242830fd; */
 }
 .administration-title {
     font-size: 2rem;
@@ -158,20 +205,19 @@ header button:hover {
 .administration-content {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 .administrations:nth-child(odd) {
     margin-top: 10rem;
 }
 .administrations {
-    width: calc(100% / 3);
     height: 450px;
     background: #fff;
     text-align: center;
     margin: 0 30px;
+    padding: 2px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -268,13 +314,11 @@ header button:hover {
 .teachers-content {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 .teacher {
-    width: calc(100% / 4);
     background: #fff;
     text-align: center;
     margin: 10px;
@@ -320,9 +364,9 @@ header button:hover {
     padding: 100px;
 }
 .programming-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 }
 .programming-lang {
     text-align: center;
@@ -347,9 +391,9 @@ header button:hover {
     padding-bottom: 150px;
 }
 .Learn-programming-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 .Learn-programming-title {
     font-size: 2rem;
@@ -358,8 +402,7 @@ header button:hover {
     padding: 100px;
 }
 .Learn-p {
-    width: calc(100% / 4);
-    margin: 0 15px;
+    margin: 10px;
 }
 .Learn-p .btn {
     font-family: 'Almarai', sans-serif;
@@ -411,13 +454,12 @@ footer {
     direction: ltr;
 }
 .footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px 0
 }
 .footer {
-    width: calc(100% / 3);
     margin: 0 20px;
 }
 .footer:nth-child(even) {
