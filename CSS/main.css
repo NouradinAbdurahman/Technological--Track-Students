@@ -190,7 +190,6 @@ header button:hover {
 }
 .hero p {
     line-height: 2.6;
-    word-spacing: 3px;
 }
 .administration {
     width: 100%;
@@ -535,7 +534,6 @@ footer {
 .student-name h3 {
     font-family: 'Almarai', sans-serif;
     color: black;
-    word-spacing: 2px;
     line-height: 1.6;
     padding-bottom: 10px;
 }
@@ -552,7 +550,6 @@ footer {
 .programming-languages p {
     color: whitesmoke;
     line-height: 2;
-    word-spacing: 3px;
 }
 .languages h3 {
     font-size: 2rem;
@@ -566,5 +563,4 @@ footer {
 .languages p {
     color: whitesmoke;
     line-height: 2;
-    word-spacing: 3px;
 }
