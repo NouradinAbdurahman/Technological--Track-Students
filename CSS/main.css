@@ -10,7 +10,7 @@ html {
 body {
     background: #1d2026;
     background: #091921;
-    font-family: 'Almarai', sans-serif;
+    font-family: 'Almarai', sans-serif !important;
 }
 ::-webkit-scrollbar {
     width: 6px;
@@ -70,52 +70,11 @@ header .logo img {
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
 }
-header .container .menu-img {
+#open {
     display: none;
-    width: 50%;
-    height: 50px;
-    /* padding: 10px; */
-    margin-top: 20px;
-    /* background: white; */
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    cursor: pointer;
-    text-align: end;
 }
-header .container .menu-img img {
-    width: 15%;
-    padding: 10px;
-    background: white;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-header .container .close-img {
+#close {
     display: none;
-    position: relative;
-    width: 100%;
-    height: 65px;
-    margin-top: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    cursor: pointer;
-}
-header .container .close-img img {
-    width: 15%;
-    padding: 10px;
-    position: absolute;
-    content: " ";
-    left: 6%;
-    background: white;
-    border-radius: 10px;
 }
 header nav {
     width: 100%;
